@@ -1,0 +1,207 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+  
+  <div class="container">
+    
+    <h1 class="mt-5 mb-5 text-center">Movies catalog</h1>
+
+    <div class="row">
+      <div class="col-4">
+        <input type="email" class="form-control mb-3" id="exampleFormControlInput1" placeholder="ave">
+        <input type="email" class="form-control mb-3" id="exampleFormControlInput1" placeholder="5">
+        <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+          <option selected>All</option>
+          <option value="1">All</option>
+          <option value="2">Less</option>
+          <option value="3">Partially</option>
+        </select>
+        <div>
+          <input class="form-control py-2 my-3" list="country" placeholder="Rating">
+          <datalist id="country" class="py-2">
+            <option value="high"></option>
+            <option value="to"></option>
+            <option value="low"></option>        
+          </datalist>
+        </div>
+        <button type="button" class="btn btn-primary w-100 my-3">Search</button>
+        <h2 class="text-center">Bookmarked movies</h2>
+        <ul class="p-0">
+          <li class="list-group-item rounded-top">
+            <p class="bg-wite mb-2">Avengers: Infinity War</p>
+            <button class="btn btn-danger text-white border-0 rounded-1 py-1" type="button">Remove</button>
+          </li>
+          <li class="list-group-item">
+            <p class="bg-wite mb-2">The Avengers</p>
+            <button class="btn btn-danger text-white border-0 rounded-1 py-1">Remove</button>
+          </li>
+          <li class="list-group-item rounded-bottom">
+            <p class="bg-wite mb-2">12 Years a Slave</p>
+            <button class="btn btn-danger text-white border-0 rounded-1 py-1">Remove</button>
+          </li>
+        </ul>
+        
+      </div>
+      <div class="col-8 p-0">
+        <h3 class="mb-2">Search results:39</h3>
+        <p class="alert alert-success">Use the form on the left to search for a movie</p>
+        <div class="row justify-content-between">
+          <div class="col-6">
+            <div class="card">
+              
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img  src="./img/trailer.jpg" class="d-blockb  w-100" height="200" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img  src="./img/capitan_America.jpg" class="d-blockb  w-100" height="200" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img  src="./img/Captain-America.jpg" class="d-blockb  w-100" height="200" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              
+              
+              <div class="my-3 mx-3">
+                <h2 class="mt-2 fs-4">Avengers: Infinity War</h2>
+              </div>
+              <div class="mx-3 d-flex align-items-center">
+                <img  src="./img/calendar-silhouette.png" height="30" alt="calendar">
+                <p class="p-0 m-0 m-2">2018</p>
+              </div>
+              <div class="mx-3 d-flex align-items-center">
+                <img src="./img/star.png" height="22" alt="yulduzcha">
+                <p class="p-0 m-0 m-2">8.7</p>
+              </div>
+              <div class="text-center mt-4 mb-3">
+                <button class="btn btn-outline-primary">Watch trailer</button>
+                <button type="button" class="btn mx-2 btn-outline-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  More info
+                </button>
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="display: none;">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Movies</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Banner insists that Thanos is the most formidable enemy they have ever faced, revealing that he was Loki's sponsor during the Battle of New York and will wipe out half the universe if he completes the Infinity Gauntlet. Stark suggests simply destroying the Time Stone since they've got it on hand, but Strange refuses as he and Wong have pledged to protect it with their lives. Banner asks where Vision is, and Stark admits that he's lost track of him and that Steve Rogers might know where he is. Stark brings Banner up to date with everything that happened since he left Earth; the Avengers have disbanded, and he is no longer on speaking terms with Rogers. Banner implores Stark to call Rogers, insisting that whatever happened between them doesn't matter compared to what is coming. Convinced, Stark takes out the phone Rogers sent him after the Avengers Civil War and prepares to make the call.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn-outline-secondary">Bookmark</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 ">
+            <div class="card">
+              <div id="carouselExampleControlss" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img  src="./img/avengers.jpg" class="d-blockb  w-100" height="200" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img  src="./img/green-man.jpg" class="d-blockb  w-100" height="200" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img  src="./img/spider_man_three.jpg" class="d-blockb  w-100" height="200" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlss" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlss" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              
+              <div class="my-3 mx-3">
+                <h2 class="mt-2 fs-4">Avengers: Infinity War</h2>
+              </div>
+              <div class="mx-3 d-flex align-items-center">
+                <img  src="./img/calendar-silhouette.png" height="30" alt="calendar">
+                <p class="p-0 m-0 m-2">2018</p>
+              </div>
+              <div class="mx-3 d-flex align-items-center">
+                <img src="./img/star.png" height="22" alt="yulduzcha">
+                <p class="p-0 m-0 m-2">8.7</p>
+              </div>
+              <div class="text-center mt-4 mb-3">
+                <button class="btn btn-outline-primary">Watch trailer</button>
+                <button type="button" class="btn mx-2 btn-outline-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  More info
+                </button>
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="display: none;">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Movies</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Banner insists that Thanos is the most formidable enemy they have ever faced, revealing that he was Loki's sponsor during the Battle of New York and will wipe out half the universe if he completes the Infinity Gauntlet. Stark suggests simply destroying the Time Stone since they've got it on hand, but Strange refuses as he and Wong have pledged to protect it with their lives. Banner asks where Vision is, and Stark admits that he's lost track of him and that Steve Rogers might know where he is. Stark brings Banner up to date with everything that happened since he left Earth; the Avengers have disbanded, and he is no longer on speaking terms with Rogers. Banner implores Stark to call Rogers, insisting that whatever happened between them doesn't matter compared to what is coming. Convinced, Stark takes out the phone Rogers sent him after the Avengers Civil War and prepares to make the call.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn-outline-secondary">Bookmark</button>
+              </div>
+            </div>
+            
+          </div>
+          
+          
+          
+          
+          
+        </div>
+
+        <nav aria-label="...">
+          <ul class="pagination pagination-lg d-flex justify-content-center mt-4">
+            <li class="page-item active" aria-current="page">
+              <span class="page-link">1</span>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+    
+    
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+  </body>
+  </html>
